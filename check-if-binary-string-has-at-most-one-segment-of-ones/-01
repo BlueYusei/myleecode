@@ -1,0 +1,21 @@
+class Solution {
+    public boolean checkOnesSegment(String s) {
+        
+        
+        //字符串长度为1时
+        if(s.equals("1")) return true;   //未定单个字符或者已知字符串用equals或者compareTo，前者返回boolean，后者需要和0，1比较，0为true，1为false
+        
+        //字符串长度大于1时
+        for(int i=1;i<s.length()-1;i++){
+            if(s.charAt(i)=='0'){    //已知单个字符可用“=”比较，单个字符提取用charAt().
+                if(s.charAt(i+1)=='1'){
+                    return false;
+                }
+            }
+        }
+        
+        return true;
+    }
+}
+
+//解题思路：第一位必定为1，从第二位开始，找0和0后面的一位，若为1，则返回false；为0，则继续往下找，直到最后一位，若循环过程中没错，则必定为true。
