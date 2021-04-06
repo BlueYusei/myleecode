@@ -67,7 +67,7 @@ public class HelloWorld {
                         //2,1
                         new ListNode(2, new ListNode(1, null)),
                 };
-        // @doc testVector 是结果用例集合
+        // @doc resultVector 是结果用例集合
         ListNode[] resultVector = new ListNode[]{
                 //1,2,2,4,3,5
                 new ListNode(1, new ListNode(2, new ListNode(2, new ListNode(4, new ListNode(3, new ListNode(5, null)))))),
