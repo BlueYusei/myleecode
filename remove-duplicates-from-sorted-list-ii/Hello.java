@@ -74,12 +74,16 @@ public class HelloWorld {
     public static void main(String[] args) {
         // @doc testVector 是测试用例集合,两个new为一个测试用例
         ListNode[] testVector = new ListNode[]{
+                //1,2,3,3,4,4,5
                 new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(3, new ListNode(4, new ListNode(4, new ListNode(5, null))))))),
+                //1,1,1,2,3
                 new ListNode(1, new ListNode(1, new ListNode(1, new ListNode(2, new ListNode(3, null))))),
         };
         // @doc resultVector 是测试用例集合
         ListNode[] resultVector = new ListNode[]{
+                //1,2,5
                 new ListNode(1, new ListNode(2, new ListNode(5, null))),
+                //2,3
                 new ListNode(2, new ListNode(3, null)),
         };
 
