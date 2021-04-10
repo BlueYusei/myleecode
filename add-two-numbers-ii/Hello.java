@@ -97,11 +97,14 @@ public class HelloWorld {
                 new ListNode(-2),
         };
 
+        //测试的数值
         List<int[]> lists1 = new ArrayList<>();
+        //用例1
         int[] a1 = {7, 2, 4, 3};
         lists1.add(a1);
         int[] a2 = {5, 6, 4};
         lists1.add(a2);
+        //用例2
         int[] b1 = {1, 2, 3};
         lists1.add(b1);
         int[] b2 = {1, 0};
@@ -123,9 +126,12 @@ public class HelloWorld {
                 new ListNode(-2),
         };
 
+        //结果数值
         List<int[]> lists2 = new ArrayList<>();
+        //结果1
         int[] a = {7, 8, 0, 7};
         lists2.add(a);
+        //结果2
         int[] b = {1, 3, 3};
         lists2.add(b);
 
