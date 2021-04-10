@@ -42,10 +42,12 @@ public class HelloWorld {
                 new ListNode(-3),
         };
 
+        //测试用例数值
         int[] a = {3, 2, 0, 4};     //环为4-2
         int[] b = {1, 2};           //环为2-1
         int[] c = {1};
 
+        //建立测试用例
         ListNode temp = new ListNode(-1);                //temp.next指向环结点，不是尾结点
         ListNode tempHead = new ListNode(-1);            //tempHead.next指向链表头结点的前一个结点
 
